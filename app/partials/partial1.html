@@ -1,6 +1,20 @@
 <p>Busca de JSON em uma API sem CORS usando <a href="http://cors-server.getup.io/">http://cors-server.getup.io/</a> 
 </p>
 
+<form data-ng-submit="submit()">
+  <label for="url">
+    <input type="text" name="url" data-ng-model="url">
+    <!-- <button data-ng-click="find(url)">Buscar</button> -->
+    <input type="submit" value="Buscar">
+  </label>
+  <p>
+    Buscando em: {{ urlFull }}
+  </p>
+</form>
+
+<div class="spinner" ng-show="loading">
+  <img src="img/ajax-loader.gif">
+</div>
 <blockquote>
   {{ data }}
 </blockquote>
