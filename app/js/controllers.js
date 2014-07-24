@@ -6,7 +6,7 @@ angular.module('myApp.controllers', [])
     .controller('MyCtrl1', ['$scope', 'Cors',
         function($scope, Cors) {
 
-            // var base = 'http://cors-server.getup.io/url/';
+            var base = 'http://cors-server.getup.io/url/';
             var url = 'api.redtube.com/?data=redtube.Videos.searchVideos&search=Sasha%20Gray';
 
             $scope.urlFull = base + url;
